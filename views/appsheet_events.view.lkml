@@ -88,6 +88,4 @@ view: appsheet_events {
   }
 
 
-
-
 }
