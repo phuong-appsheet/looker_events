@@ -53,8 +53,30 @@ view: appsheet_events {
     sql: ${TABLE}.event_time ;;
   }
 
-  measure: count {
+  measure: number_of_app_ids {
     type: count
-    drill_fields: [event_name, appsheet_app_id, appsheet_owner_id, appsheet_user_id]
+    drill_fields: [appsheet_app_id]
   }
+
+  measure: number_of_events {
+    type: count
+    drill_fields: [event_name]
+  }
+
+  measure: number_of_owner_ids {
+    type: count
+    drill_fields: [appsheet_owner_id]
+  }
+
+  measure: number_of_user_ids {
+    type: count
+    drill_fields: [appsheet_user_id]
+  }
+
+  measure: number_of_countries {
+    type: count
+    drill_fields: [country]
+  }
+
+
 }
