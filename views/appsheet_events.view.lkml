@@ -87,6 +87,18 @@ view: appsheet_events {
     drill_fields: [country]
   }
 
+  #count number of total user ids
+  measure: total_number_of_user_ids {
+    type: count
+    drill_fields: [appsheet_user_id]
+  }
+
+  #count number of total app ids
+  measure: total_number_of_app_ids {
+    type: count
+    drill_fields: [appsheet_app_id]
+  }
+
 
   #getting the average number of app users per app
   measure: average_number_of_users_per_app {
