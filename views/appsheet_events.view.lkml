@@ -73,7 +73,7 @@ view: appsheet_events {
     drill_fields: [appsheet_owner_id]
   }
 
-  #count number of distinct user ids
+  #count number of user ids
   measure: number_of_user_ids {
     type: count_distinct
     sql: ${appsheet_user_id};;
