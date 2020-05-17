@@ -56,6 +56,7 @@ view: appsheet_events {
   #count number of distinct app ids
   measure: number_of_app_ids {
     type: count_distinct
+    sql: ${appsheet_app_id};;
     drill_fields: [appsheet_app_id]
   }
 
@@ -68,18 +69,21 @@ view: appsheet_events {
   #count number of distinct owner ids
   measure: number_of_owner_ids {
     type: count_distinct
+    sql: ${appsheet_owner_id};;
     drill_fields: [appsheet_owner_id]
   }
 
   #count number of distinct user ids
   measure: number_of_user_ids {
     type: count_distinct
+    sql: ${appsheet_user_id};;
     drill_fields: [appsheet_user_id]
   }
 
   #count number of distinct countries
   measure: number_of_countries {
     type: count_distinct
+    sql: ${country};;
     drill_fields: [country]
   }
 
