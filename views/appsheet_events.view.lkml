@@ -53,28 +53,33 @@ view: appsheet_events {
     sql: ${TABLE}.event_time ;;
   }
 
+  #count number of distinct app ids
   measure: number_of_app_ids {
-    type: count
+    type: count_distinct
     drill_fields: [appsheet_app_id]
   }
 
+  #count total number of events
   measure: number_of_events {
     type: count
     drill_fields: [event_name]
   }
 
+  #count number of distinct owner ids
   measure: number_of_owner_ids {
-    type: count
+    type: count_distinct
     drill_fields: [appsheet_owner_id]
   }
 
+  #count number of distinct user ids
   measure: number_of_user_ids {
-    type: count
+    type: count_distinct
     drill_fields: [appsheet_user_id]
   }
 
+  #count number of distinct countries
   measure: number_of_countries {
-    type: count
+    type: count_distinct
     drill_fields: [country]
   }
 
