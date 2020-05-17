@@ -1,6 +1,6 @@
 view: appsheet_number_users_per_app { #this table records the daily number of unique users for each app
 
-  sql_table_name: `appsheet_analytics_prototype_data.appsheet_events`
+  sql_table_name: `appsheet_analytics_prototype_data.Number_of_Users_by_Apps`
     ;;
 
   dimension: event_time {
