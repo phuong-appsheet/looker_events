@@ -55,6 +55,6 @@ view: appsheet_events {
 
   measure: count {
     type: count
-    drill_fields: [event_name]
+    drill_fields: [event_name, appsheet_app_id, appsheet_owner_id, appsheet_user_id]
   }
 }
