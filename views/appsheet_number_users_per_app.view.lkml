@@ -13,6 +13,7 @@ view: appsheet_number_users_per_app { #this table records the daily number of un
     sql: ${TABLE}.appsheet_app_id ;;
   }
 
+  #active users are only counted if they performed one of the following events: "workflowNotification","appSync","workflowDataChange","workflowWebhook","workflowMakeDoc","workflowEmail","workflowSMS"
   dimension: number_of_users {
     type: date
     sql: ${TABLE}.number_of_users ;;
