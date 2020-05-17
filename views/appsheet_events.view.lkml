@@ -88,4 +88,12 @@ view: appsheet_events {
   }
 
 
+  #getting the average number of app users per app
+  measure: average_number_of_users_per_app {
+    group_label: "Averages"
+    type: number
+    sql: ${number_of_user_ids} / NULLIF(${number_of_app_ids},0) ;;
+  }
+
+
 }
